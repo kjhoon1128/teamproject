@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'secondscreen.dart';
 
 void main() {
   runApp(MyApp());
@@ -128,17 +129,4 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 }
 
-class SecondScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Second Screen"),
-      ),
-      body: Center(
-        child: Text("This is the second screen"),
-      ),
-    );
-  }
-}
 
