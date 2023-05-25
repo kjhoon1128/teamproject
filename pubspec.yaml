@@ -57,7 +57,21 @@ flutter:
     - assets/START!.png
     - assets/splash.png
     - assets/cook.jpg
+    - assets/korea.png
+    - assets/chicken.png
+    - assets/china.png
+    - assets/coffee.png
+    - assets/fastfood.png
+    - assets/japan.png
+    - assets/meat.png
+    - assets/random.png
+    - assets/salad.png
+    - assets/snackbar.png
+    - assets/soup.png
+    - assets/form.png
     - assets/hansik.png
+    - assets/back.png
+    - assets/like.png
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

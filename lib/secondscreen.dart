@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Randome.dart';
 
 class SecondScreen extends StatelessWidget {
   @override
@@ -9,7 +10,7 @@ class SecondScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Container(
-              height: 180, // 첫 번째 텍스트 상자 높이
+              height: 180,
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/cook.jpg'),
@@ -40,35 +41,328 @@ class SecondScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 0), // 첫 번째와 두 번째 텍스트 상자 사이 간격
+            SizedBox(height: 0),
             Container(
-              height: 540, // 두 번째 텍스트 상자 높이
-              color: Colors.black, // 두 번째 텍스트 상자 배경색
+              height: 540,
+              color: Colors.white,
               padding: EdgeInsets.all(10),
-              child: Align(
-                alignment: Alignment.centerRight,
-                child: Text(
-                  '두 번째 텍스트 상자',
-                  style: TextStyle(fontSize: 18, color: Colors.white),
-                ),
+              child: Stack(
+                children: [
+                  Align(
+                    alignment: Alignment(-1.0, -0.9),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 102,
+                          height: 98,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/hansik.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '한식',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(0.0, -0.9),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 102,
+                          height: 98,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/china.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '중식',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(1.0, -0.9),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 102,
+                          height: 98,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/form.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '양식',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(-1.0, -0.3),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 102,
+                          height: 98,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/meat.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '고기구이',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(0.0, -0.3),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 102,
+                          height: 98,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/japan.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '일식',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(1.0, -0.3),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 102,
+                          height: 98,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/soup.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '찌개',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(-1.0, 0.3),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 102,
+                          height: 98,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/coffee.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '커피 및 디저트',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(0.0, 0.3),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 102,
+                          height: 98,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/fastfood.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '패스트푸드',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(1.0, 0.3),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 102,
+                          height: 98,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/snackbar.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '분식',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(-1.0, 0.9),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 102,
+                          height: 98,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/chicken.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '치킨',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(0.0, 0.9),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 102,
+                          height: 98,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            image: DecorationImage(
+                              image: AssetImage('assets/salad.png'),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '샐러드',
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(1.0, 0.9),
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => RandomScreen()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/random.png'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            '랜덤',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
-            SizedBox(height: 0), // 두 번째와 세 번째 텍스트 상자 사이 간격
+            SizedBox(height: 0),
             Container(
-              height: 80, // 세 번째 텍스트 상자 높이
-              color: Colors.yellow, // 세 번째 텍스트 상자 배경색
+              height: 80,
+              color: Colors.white,
               padding: EdgeInsets.all(10),
-              child: Align(
-                alignment: Alignment.centerRight,
-                child: Text(
-                  '세 번째 텍스트 상자',
-                  style: TextStyle(fontSize: 18, color: Colors.white),
-                ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  InkWell(
+                    onTap: () {
+                      // Button 1 tapped
+                    },
+                    child: Image.asset('assets/like.png'),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pop(context); // Go back to the previous screen
+                    },
+                    child: Image.asset('assets/back.png'),
+                  ),
+                ],
               ),
-            ),
+            ), //여기까지가 밑에 버튼있는 컨테이너
           ],
         ),
       ),
     );
   }
 }
+

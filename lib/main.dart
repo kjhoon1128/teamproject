@@ -111,6 +111,20 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                 ),
               ),
+              SizedBox(
+                width: 332,
+                height: 64,
+                child: Text(
+                  "Welcome!",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 30,
+                    fontFamily: "Lexend Peta",
+                    fontWeight: FontWeight.w200,
+                  ),
+                ),
+              ),
               CircularProgressIndicator(),
               SizedBox(height: 20),
               Text(
