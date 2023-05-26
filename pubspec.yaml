@@ -30,6 +30,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_maps_flutter: ^2.2.0
+  geolocator: ^8.0.1
+  location: ^4.3.1
+  http: ^0.13.4
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -72,6 +77,10 @@ flutter:
     - assets/hansik.png
     - assets/back.png
     - assets/like.png
+    - assets/Refresh.png
+    - assets/number1.png
+    - assets/love.png
+    - assets/scissors.png
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

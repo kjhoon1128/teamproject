@@ -1,5 +1,16 @@
 import 'package:flutter/material.dart';
-import 'Randome.dart';
+import 'chicken.dart';
+import 'china.dart';
+import 'coffee.dart';
+import 'fastfood.dart';
+import 'form.dart';
+import 'japan.dart';
+import 'meat.dart';
+import 'random.dart';
+import 'salad.dart';
+import 'snackbar.dart';
+import 'soup.dart';
+import 'hansik.dart';
 
 class SecondScreen extends StatelessWidget {
   @override
@@ -50,255 +61,354 @@ class SecondScreen extends StatelessWidget {
                 children: [
                   Align(
                     alignment: Alignment(-1.0, -0.9),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 102,
-                          height: 98,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                              image: AssetImage('assets/hansik.png'),
-                              fit: BoxFit.cover,
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => HansikImagePage()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/hansik.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          '한식',
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
+                          Text(
+                            '한식',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Align(
                     alignment: Alignment(0.0, -0.9),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 102,
-                          height: 98,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                              image: AssetImage('assets/china.png'),
-                              fit: BoxFit.cover,
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ChinaImagePage()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/china.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          '중식',
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
+                          Text(
+                            '중식',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Align(
                     alignment: Alignment(1.0, -0.9),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 102,
-                          height: 98,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                              image: AssetImage('assets/form.png'),
-                              fit: BoxFit.cover,
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => FormImagePage()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/form.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          '양식',
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
+                          Text(
+                            '양식',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Align(
                     alignment: Alignment(-1.0, -0.3),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 102,
-                          height: 98,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                              image: AssetImage('assets/meat.png'),
-                              fit: BoxFit.cover,
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MeatImagePage()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/meat.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          '고기구이',
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
+                          Text(
+                            '고기구이',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Align(
                     alignment: Alignment(0.0, -0.3),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 102,
-                          height: 98,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                              image: AssetImage('assets/japan.png'),
-                              fit: BoxFit.cover,
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => JapanImagePage()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/japan.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          '일식',
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
+                          Text(
+                            '일식',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Align(
                     alignment: Alignment(1.0, -0.3),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 102,
-                          height: 98,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                              image: AssetImage('assets/soup.png'),
-                              fit: BoxFit.cover,
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => SoupImagePage()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/soup.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          '찌개',
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
+                          Text(
+                            '찌개',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Align(
                     alignment: Alignment(-1.0, 0.3),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 102,
-                          height: 98,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                              image: AssetImage('assets/coffee.png'),
-                              fit: BoxFit.cover,
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => CoffeeImagePage()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/coffee.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          '커피 및 디저트',
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
+                          Text(
+                            '커피 및 디저트',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Align(
                     alignment: Alignment(0.0, 0.3),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 102,
-                          height: 98,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                              image: AssetImage('assets/fastfood.png'),
-                              fit: BoxFit.cover,
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => FastfoodImagePage()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/fastfood.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          '패스트푸드',
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
+                          Text(
+                            '패스트푸드',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Align(
                     alignment: Alignment(1.0, 0.3),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 102,
-                          height: 98,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                              image: AssetImage('assets/snackbar.png'),
-                              fit: BoxFit.cover,
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => SnackbarImagePage()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/snackbar.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          '분식',
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
+                          Text(
+                            '분식',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Align(
                     alignment: Alignment(-1.0, 0.9),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 102,
-                          height: 98,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                              image: AssetImage('assets/chicken.png'),
-                              fit: BoxFit.cover,
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ChickenImagePage()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/chicken.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          '치킨',
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
+                          Text(
+                            '치킨',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Align(
                     alignment: Alignment(0.0, 0.9),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 102,
-                          height: 98,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            image: DecorationImage(
-                              image: AssetImage('assets/salad.png'),
-                              fit: BoxFit.cover,
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => SaladImagePage()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/salad.png'),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          '샐러드',
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                      ],
+                          Text(
+                            '샐러드',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Align(
@@ -308,7 +418,7 @@ class SecondScreen extends StatelessWidget {
                         // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => RandomScreen()),
+                          MaterialPageRoute(builder: (context) => RandomImagePage()),
                         );
                       },
                       child: Column(
@@ -365,4 +475,3 @@ class SecondScreen extends StatelessWidget {
     );
   }
 }
-
