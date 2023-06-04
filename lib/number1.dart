@@ -137,7 +137,7 @@ class _RandomImagePageState extends State<RandomImagePage> {
       case 'assets/soup.png':
         return '찌개';
       default:
-        return '메뉴 설명이 없습니다.';
+        return '메뉴 설명이 없음';
     }
   }
 }
