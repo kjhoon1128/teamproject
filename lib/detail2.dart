@@ -103,7 +103,7 @@ class _Detail2PageState extends State<Detail2Page> {
                 hideResult ? '' : texts[selectedIndex],
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 48,
+                  fontSize: 30,
                 ),
                 textAlign: TextAlign.center,
               ),

@@ -485,7 +485,7 @@ class SecondScreen extends StatelessWidget {
                     onTap: () {
                       navigateToMap(context);
                     },
-                    child: Image.asset('assets/like.png'),
+                    child: Image.asset('assets/map.png'),
                   ),
                   InkWell(
                     onTap: () {
