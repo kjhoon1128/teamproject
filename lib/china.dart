@@ -80,7 +80,7 @@ class ChinaImagePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/hansik.png'),
+                                image: AssetImage('assets/china1.png'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -112,7 +112,7 @@ class ChinaImagePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/china.png'),
+                                image: AssetImage('assets/china2.png'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -144,13 +144,13 @@ class ChinaImagePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/form.png'),
+                                image: AssetImage('assets/china3.png'),
                                 fit: BoxFit.cover,
                               ),
                             ),
                           ),
                           Text(
-                            '깐풍기',
+                            '딤섬',
                             style: TextStyle(fontSize: 14, color: Colors.black),
                           ),
                         ],
@@ -176,7 +176,7 @@ class ChinaImagePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/meat.png'),
+                                image: AssetImage('assets/china4.png'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -208,7 +208,7 @@ class ChinaImagePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/japan.png'),
+                                image: AssetImage('assets/china5.png'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -240,181 +240,13 @@ class ChinaImagePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/soup.png'),
+                                image: AssetImage('assets/china6.png'),
                                 fit: BoxFit.cover,
                               ),
                             ),
                           ),
                           Text(
                             '짬뽕',
-                            style: TextStyle(fontSize: 14, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment(-1.0, 0.3),
-                    child: InkWell(
-                      onTap: () {
-                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            width: 102,
-                            height: 98,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('assets/coffee.png'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '커피 및 디저트',
-                            style: TextStyle(fontSize: 14, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment(0.0, 0.3),
-                    child: InkWell(
-                      onTap: () {
-                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            width: 102,
-                            height: 98,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('assets/fastfood.png'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '패스트푸드',
-                            style: TextStyle(fontSize: 14, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment(1.0, 0.3),
-                    child: InkWell(
-                      onTap: () {
-                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            width: 102,
-                            height: 98,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('assets/snackbar.png'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '분식',
-                            style: TextStyle(fontSize: 14, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment(-1.0, 0.9),
-                    child: InkWell(
-                      onTap: () {
-                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            width: 102,
-                            height: 98,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('assets/chicken.png'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '치킨',
-                            style: TextStyle(fontSize: 14, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment(0.0, 0.9),
-                    child: InkWell(
-                      onTap: () {
-                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            width: 102,
-                            height: 98,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('assets/salad.png'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '샐러드',
-                            style: TextStyle(fontSize: 14, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment(1.0, 0.9),
-                    child: InkWell(
-                      onTap: () {
-                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            width: 102,
-                            height: 98,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('assets/random.png'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '랜덤',
                             style: TextStyle(fontSize: 14, color: Colors.black),
                           ),
                         ],
@@ -442,7 +274,7 @@ class ChinaImagePage extends StatelessWidget {
                     onTap: () {
                       navigateToMap(context);
                     },
-                    child: Image.asset('assets/like.png'),
+                    child: Image.asset('assets/map.png'),
                   ),
                   InkWell(
                     onTap: () {

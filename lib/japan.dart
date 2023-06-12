@@ -80,13 +80,13 @@ class JapanImagePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/hansik.png'),
+                                image: AssetImage('assets/japan1.png'),
                                 fit: BoxFit.cover,
                               ),
                             ),
                           ),
                           Text(
-                            '로바다야끼',
+                            '초밥',
                             style: TextStyle(fontSize: 14, color: Colors.black),
                           ),
                         ],
@@ -112,13 +112,13 @@ class JapanImagePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/china.png'),
+                                image: AssetImage('assets/japan2.png'),
                                 fit: BoxFit.cover,
                               ),
                             ),
                           ),
                           Text(
-                            '덴푸라',
+                            '라멘',
                             style: TextStyle(fontSize: 14, color: Colors.black),
                           ),
                         ],
@@ -144,13 +144,13 @@ class JapanImagePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/form.png'),
+                                image: AssetImage('assets/japan3.png'),
                                 fit: BoxFit.cover,
                               ),
                             ),
                           ),
                           Text(
-                            '스끼야끼',
+                            '돈까스',
                             style: TextStyle(fontSize: 14, color: Colors.black),
                           ),
                         ],
@@ -176,13 +176,13 @@ class JapanImagePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/meat.png'),
+                                image: AssetImage('assets/japan4.png'),
                                 fit: BoxFit.cover,
                               ),
                             ),
                           ),
                           Text(
-                            '모츠나베',
+                            '우동',
                             style: TextStyle(fontSize: 14, color: Colors.black),
                           ),
                         ],
@@ -208,7 +208,7 @@ class JapanImagePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/japan.png'),
+                                image: AssetImage('assets/japan5.png'),
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -240,181 +240,13 @@ class JapanImagePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/soup.png'),
+                                image: AssetImage('assets/japan6.png'),
                                 fit: BoxFit.cover,
                               ),
                             ),
                           ),
                           Text(
-                            '야키누키',
-                            style: TextStyle(fontSize: 14, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment(-1.0, 0.3),
-                    child: InkWell(
-                      onTap: () {
-                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            width: 102,
-                            height: 98,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('assets/coffee.png'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '커피 및 디저트',
-                            style: TextStyle(fontSize: 14, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment(0.0, 0.3),
-                    child: InkWell(
-                      onTap: () {
-                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            width: 102,
-                            height: 98,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('assets/fastfood.png'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '패스트푸드',
-                            style: TextStyle(fontSize: 14, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment(1.0, 0.3),
-                    child: InkWell(
-                      onTap: () {
-                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            width: 102,
-                            height: 98,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('assets/snackbar.png'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '분식',
-                            style: TextStyle(fontSize: 14, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment(-1.0, 0.9),
-                    child: InkWell(
-                      onTap: () {
-                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            width: 102,
-                            height: 98,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('assets/chicken.png'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '치킨',
-                            style: TextStyle(fontSize: 14, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment(0.0, 0.9),
-                    child: InkWell(
-                      onTap: () {
-                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            width: 102,
-                            height: 98,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('assets/salad.png'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '샐러드',
-                            style: TextStyle(fontSize: 14, color: Colors.black),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment(1.0, 0.9),
-                    child: InkWell(
-                      onTap: () {
-                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
-                      },
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            width: 102,
-                            height: 98,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: DecorationImage(
-                                image: AssetImage('assets/random.png'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            '랜덤',
+                            '연어 롤',
                             style: TextStyle(fontSize: 14, color: Colors.black),
                           ),
                         ],

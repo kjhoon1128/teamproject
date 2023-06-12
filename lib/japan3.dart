@@ -26,7 +26,7 @@ class Japan3Page extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/hansik.png'),
+                  image: AssetImage('assets/japan3.png'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -38,7 +38,7 @@ class Japan3Page extends StatelessWidget {
               width: 122,
               height: 68,
               child: Text(
-                "스끼야끼",
+                "돈까스",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 30,

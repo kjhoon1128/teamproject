@@ -26,7 +26,7 @@ class Japan5Page extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/hansik.png'),
+                  image: AssetImage('assets/japan5.png'),
                   fit: BoxFit.cover,
                 ),
               ),

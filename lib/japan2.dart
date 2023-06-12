@@ -26,7 +26,7 @@ class Japan2Page extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/hansik.png'),
+                  image: AssetImage('assets/japan2.png'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -38,7 +38,7 @@ class Japan2Page extends StatelessWidget {
               width: 122,
               height: 68,
               child: Text(
-                "덴푸라",
+                "라멘",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 30,

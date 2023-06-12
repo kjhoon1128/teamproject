@@ -26,7 +26,7 @@ class Salad2Page extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/hansik.png'),
+                  image: AssetImage('assets/salad2.png'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -38,7 +38,7 @@ class Salad2Page extends StatelessWidget {
               width: 122,
               height: 68,
               child: Text(
-                "고구마 샐러드",
+                "과일 샐러드",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 30,

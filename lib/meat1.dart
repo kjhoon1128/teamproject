@@ -26,7 +26,7 @@ class Meat1Page extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/hansik.png'),
+                  image: AssetImage('assets/meat1.png'),
                   fit: BoxFit.cover,
                 ),
               ),

@@ -26,7 +26,7 @@ class Japan4Page extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/hansik.png'),
+                  image: AssetImage('assets/japan4.png'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -38,7 +38,7 @@ class Japan4Page extends StatelessWidget {
               width: 122,
               height: 68,
               child: Text(
-                "모츠나베",
+                "우동",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 30,

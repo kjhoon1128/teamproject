@@ -1,96 +1,302 @@
 import 'package:flutter/material.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:geolocator/geolocator.dart';
+import 'package:test01/chicken1.dart';
+import 'package:test01/chicken2.dart';
+import 'package:test01/chicken3.dart';
+import 'package:test01/chicken4.dart';
+import 'package:test01/chicken5.dart';
+import 'package:test01/chicken6.dart';
+import 'package:test01/random2.dart';
+import 'package:test01/map.dart';
 
-class ChickenImagePage extends StatefulWidget {
-  @override
-  _ChickenImagePageState createState() => _ChickenImagePageState();
-}
-
-class _ChickenImagePageState extends State<ChickenImagePage> {
-  late GoogleMapController _mapController;
-  LatLng? _initialPosition;
-
-  @override
-  void initState() {
-    super.initState();
-    _getUserLocation();
+class ChickenImagePage extends StatelessWidget {
+  void navigateToMap(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => MapPage()),
+    );
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('치킨'),
-      ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            SizedBox(height: 16),
             Container(
-              width: 348,
-              height: 200,
+              height: 180,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(26),
-              ),
-              child: GoogleMap(
-                initialCameraPosition: CameraPosition(
-                  target: _initialPosition ?? LatLng(37.421998, 127.088),
-                  zoom: 15,
+                image: DecorationImage(
+                  image: AssetImage('assets/cook.jpg'),
+                  fit: BoxFit.cover,
                 ),
-                mapType: MapType.normal,
-                myLocationEnabled: true, // 사용자의 위치 표시
-                onMapCreated: (controller) {
-                  _onMapCreated(controller);
-                },
+              ),
+              padding: EdgeInsets.all(10),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: RichText(
+                  text: TextSpan(
+                    children: [
+                      TextSpan(
+                        text: '음식 메뉴 추천',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                          color: Colors.black,
+                        ),
+                      ),
+                      TextSpan(
+                        text: '\n\n우리 뭐 먹을까\n\n\n세명대 제천시',
+                        style: TextStyle(fontSize: 18, color: Colors.black),
+                      ),
+                    ],
+                  ),
+                  textAlign: TextAlign.left,
+                ),
               ),
             ),
+            SizedBox(height: 0),
+            Container(
+              height: 540,
+              color: Colors.white,
+              padding: EdgeInsets.all(10),
+              child: Stack(
+                children: [
+                  Align(
+                    alignment: Alignment(-1.0, -0.9),
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Chicken1Page()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/chicken1.png'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            'BBQ 치킨',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(0.0, -0.9),
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Chicken2Page()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/chicken2.png'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            '네네치킨',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(1.0, -0.9),
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Chicken3Page()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/chicken3.png'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            '푸라닭',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(-1.0, -0.3),
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Chicken4Page()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/chicken4.png'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            '맛닭꼬',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(0.0, -0.3),
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Chicken5Page()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/chicken5.png'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            '굽네치킨',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment(1.0, -0.3),
+                    child: InkWell(
+                      onTap: () {
+                        // '랜덤' 컨테이너를 눌렀을 때 새로운 창으로 이동
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Chicken6Page()),
+                        );
+                      },
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 102,
+                            height: 98,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: DecorationImage(
+                                image: AssetImage('assets/chicken6.png'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            'BHC 치킨',
+                            style: TextStyle(fontSize: 14, color: Colors.black),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 0),
+            Container(
+              height: 80,
+              color: Colors.white,
+              padding: EdgeInsets.all(10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  InkWell(
+                    onTap: () {
+                      // Button 1 tapped
+                    },
+                    child: Image.asset('assets/like.png'),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      navigateToMap(context);
+                    },
+                    child: Image.asset('assets/map.png'),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Random2()),
+                      );
+                    },
+                    child: Image.asset('assets/random2.png'),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pop(context); // Go back to the previous screen
+                    },
+                    child: Image.asset('assets/back.png'),
+                  ),
+                ],
+              ),
+            ), //여기까지가 밑에 버튼있는 컨테이너
           ],
         ),
       ),
     );
   }
-
-  void _onMapCreated(GoogleMapController controller) {
-    _mapController = controller;
-  }
-
-  void _getUserLocation() async {
-    bool serviceEnabled;
-    LocationPermission permission;
-
-    // 위치 서비스 활성화 여부 확인
-    serviceEnabled = await Geolocator.isLocationServiceEnabled();
-    if (!serviceEnabled) {
-      // 위치 서비스가 비활성화된 경우 처리
-      return;
-    }
-
-    // 위치 권한 확인 및 요청
-    permission = await Geolocator.checkPermission();
-    if (permission == LocationPermission.denied) {
-      permission = await Geolocator.requestPermission();
-      if (permission != LocationPermission.whileInUse &&
-          permission != LocationPermission.always) {
-        // 위치 권한이 거부된 경우 처리
-        return;
-      }
-    }
-
-    // 위치 가져오기
-    final position = await Geolocator.getCurrentPosition(
-      desiredAccuracy: LocationAccuracy.high,
-    );
-
-    setState(() {
-      _initialPosition = LatLng(position.latitude, position.longitude);
-    });
-  }
-}
-
-void main() {
-  runApp(MaterialApp(
-    home: ChickenImagePage(),
-  ));
 }

@@ -26,7 +26,7 @@ class Hansik2Page extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/hansik.png'),
+                  image: AssetImage('assets/hansik2.png'),
                   fit: BoxFit.cover,
                 ),
               ),

@@ -26,7 +26,7 @@ class Soup2Page extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/hansik.png'),
+                  image: AssetImage('assets/soup2.png'),
                   fit: BoxFit.cover,
                 ),
               ),

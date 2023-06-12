@@ -26,7 +26,7 @@ class China3Page extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/hansik.png'),
+                  image: AssetImage('assets/china3.png'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -38,7 +38,7 @@ class China3Page extends StatelessWidget {
               width: 122,
               height: 68,
               child: Text(
-                "깐풍기",
+                "딤섬",
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 30,
